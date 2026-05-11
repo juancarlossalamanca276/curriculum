@@ -345,12 +345,23 @@
   color:white;
 }
 
+.modal-image{
+  width:140px;
+  height:140px;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 25px auto;
+  background:white;
+  padding:15px;
+  border-radius:20px;
+  box-shadow:0 0 25px #00ffff50;
+}
   </style>
     </head>
 
     <script>
 
-function openModal(title, description, tech){
+function openModal(title, description, tech, image){
 
   document.getElementById('modal').style.display = 'flex';
 
@@ -359,6 +370,8 @@ function openModal(title, description, tech){
   document.getElementById('modalDescription').innerText = description;
 
   document.getElementById('modalTech').innerText = tech;
+
+  document.getElementById('modalImage').src = image;
 }
 
 function closeModal(){
@@ -380,6 +393,8 @@ window.onclick = function(event){
         <div class="modal-content">
 
             <span class="close-btn" onclick="closeModal()">&times;</span>
+
+            <img id="modalImage" class="modal-image" src alt>
 
             <h2 id="modalTitle"></h2>
 
@@ -601,11 +616,11 @@ window.onclick = function(event){
 
                         <!-- Logos de procesos electorales -->
                         <div class="electoral-logos">
-
                             <div class="logo-card" onclick="openModal(
 'Elecciones Judiciales',
-'Sistema biométrico y soporte técnico electoral para el proceso de Elecciones Judiciales. Desarrollo y mantenimiento de interoperabilidad, validación biométrica y soporte de plataformas electorales nacionales.',
-'Java, Spring Boot, PostgreSQL, APIs REST'
+'Sistema biométrico y soporte técnico electoral para el proceso de Elecciones Judiciales. Desarrollo y mantenimiento de interoperabilidad y validación biométrica.',
+'Java, Spring Boot, PostgreSQL, APIs REST',
+'assets/logos/judiciales.png'
 )">
                                 <img src="assets/logos/judiciales.png" alt>
                                 <span>Elecciones Judiciales</span>
