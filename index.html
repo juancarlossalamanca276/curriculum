@@ -438,16 +438,44 @@
   <div class="timeline">
 
     <div class="timeline-item">
-      <div class="timeline-content">
-        
-        <img src="assets/logos/oep.png" alt="TSE" style="width:70px;margin-bottom:15px;filter:drop-shadow(0 0 10px #00ffff);">\n        <h3>Tribunal Supremo Electoral</h3>
-        <p>Mantenimiento y desarrollo del sistema biométrico y servicios de interoperabilidad.</p>
-      </div>
+  <div class="timeline-content">
+
+    <!-- Logo principal -->
+    <img 
+      src="assets/logos/oep.png"
+      alt="TSE"
+      style="
+        width:80px;
+        margin-bottom:20px;
+        filter:drop-shadow(0 0 10px #00ffff);
+      "
+    >
+
+    <h3>Tribunal Supremo Electoral</h3>
+
+    <p>
+      Desarrollo, mantenimiento e interoperabilidad de sistemas biométricos,
+      registro civil y plataformas electorales nacionales.
+    </p>
+
+    <!-- Logos de procesos electorales -->
+    <div class="electoral-logos">
+
+      <img src="assets/logos/judiciales.png" alt="">
+      <img src="assets/logos/generales.png" alt="">
+      <img src="assets/logos/generales2.png" alt="">
+      <img src="assets/logos/referendum.png" alt="">
+      <img src="assets/logos/subnacionales.png" alt="">
+      <img src="assets/logos/subnacionales2.png" alt="">
+
     </div>
+
+  </div>
+</div>
 
     <div class="timeline-item">
       <div class="timeline-content">
-        <img src="assets/logos/gamea.png" alt="GAMEA" style="width:70px;margin-bottom:15px;filter:drop-shadow(0 0 10px #00ffff);">\n        <h3>Alcaldía de El Alto</h3>
+        <img src="assets/logos/gamea.png" alt="GAMEA" style="width:70px;margin-bottom:15px;filter:drop-shadow(0 0 10px #00ffff);">       <h3>Alcaldía de El Alto</h3>
         <p>Jefe de Unidad de Soluciones Tecnológicas y Director de Tecnologías.</p>
       </div>
     </div>
@@ -526,7 +554,32 @@
 <section id="empresas">\n  <h2 class="section-title">EMPRESAS E INSTITUCIONES</h2>\n\n  <div class="projects-grid">\n\n    <div class="card" style="text-align:center;">\n      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_OEP_Bolivia.svg/512px-Logo_OEP_Bolivia.svg.png" style="width:90px;margin-bottom:20px;">\n      <h3>Tribunal Supremo Electoral</h3>\n      <p>Desarrollo y mantenimiento de sistemas biométricos e interoperabilidad.</p>\n    </div>\n\n    <div class="card" style="text-align:center;">\n      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/El_Alto_Bolivia.svg/512px-El_Alto_Bolivia.svg.png" style="width:90px;margin-bottom:20px;">\n      <h3>Gobierno Autónomo Municipal de El Alto</h3>\n      <p>Desarrollo de sistemas tecnológicos y soluciones de seguridad ciudadana.</p>\n    </div>\n\n    <div class="card" style="text-align:center;">\n      <img src="https://www.lafar.com.bo/wp-content/uploads/2022/03/logo-lafar.png" style="width:120px;background:white;padding:10px;border-radius:10px;margin-bottom:20px;">\n      <h3>LAFAR</h3>\n      <p>Desarrollo de sistemas empresariales y administración de datos.</p>\n    </div>\n\n    <div class="card" style="text-align:center;">\n      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png" style="width:90px;margin-bottom:20px;filter:drop-shadow(0 0 10px #00ffff);">\n      <h3>Binaria Consultores</h3>\n      <p>Desarrollo y mantenimiento de soluciones tecnológicas.</p>\n    </div>\n\n  </div>\n</section>\n\n<footer>
   © 2026 Juan Carlos Salamanca - juancarlosdev.netlify.app
 </footer>
+<style>
+    .electoral-logos{
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+  margin-top:25px;
+  align-items:center;
+}
 
+.electoral-logos img{
+  width:65px;
+  height:65px;
+  object-fit:contain;
+  background:rgba(255,255,255,0.04);
+  padding:8px;
+  border-radius:12px;
+  border:1px solid #00ffff30;
+  transition:0.3s;
+  box-shadow:0 0 10px #00ffff20;
+}
+
+.electoral-logos img:hover{
+  transform:scale(1.1);
+  box-shadow:0 0 20px #00ffff;
+}
+</style>
 <script>
   tsParticles.load("tsparticles", {
     particles: {
