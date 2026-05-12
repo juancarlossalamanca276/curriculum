@@ -367,7 +367,7 @@ function openModal(title, description, tech, image){
 
   document.getElementById('modalTitle').innerText = title;
 
-  document.getElementById('modalDescription').innerText = description;
+  document.getElementById('modalDescription').innerHTML  = description;
 
   document.getElementById('modalTech').innerText = tech;
 
@@ -609,9 +609,7 @@ window.onclick = function(event){
                         <h3>Tribunal Supremo Electoral</h3>
 
                         <p>
-                            Desarrollo, mantenimiento e interoperabilidad de
-                            sistemas biométricos,
-                            registro civil y plataformas electorales nacionales.
+                           Mantemiento y Desarrollo del Sistema de Registro Único biométrico, Apoyo para Ajustes, Mejoras y Adecuaciones del Backend a los Sistemas Electorales.
                         </p>
 
                         <!-- Logos de procesos electorales -->
@@ -620,8 +618,8 @@ window.onclick = function(event){
                             <!-- Judiciales -->
                             <div class="logo-card" onclick="openModal(
     'Elecciones Judiciales',
-    'Sistema biométrico y soporte técnico electoral para el proceso de Elecciones Judiciales. Desarrollo y mantenimiento de interoperabilidad y validación biométrica.',
-    'Java, Spring Boot, PostgreSQL, APIs REST',
+    'Apoyo para Ajustes Backend a los sistemas electorales - Elecciones Judiciales 2024',
+    'Java, Spring Boot,Spring Web Flux, PostgreSQL, APIs REST, Angular',
     'assets/logos/judiciales.png'
   )">
 
@@ -671,16 +669,51 @@ window.onclick = function(event){
 
                             <!-- Subnacionales -->
                             <div class="logo-card" onclick="openModal(
-    'Subnacionales',
-    'Desarrollo y mantenimiento de plataformas electorales subnacionales.',
-    'Spring Boot, PostgreSQL, APIs',
-    'assets/logos/subnacionales.png'
-  )">
 
-                                <img src="assets/logos/subnacionales.png" alt>
-                                <span>Elecciones Subnacionales</span>
+'Elecciones Subnacionales',
 
-                            </div>
+`
+<p>
+Apoyo y desarrollo Backend para plataformas electorales nacionales,
+mantenimiento de interoperabilidad y optimización de sistemas críticos.
+</p>
+
+<h3 style='margin-top:20px;color:#00ffff;'>
+Experiencia Técnica
+</h3>
+
+<ul style='margin-top:15px;line-height:1.8;padding-left:20px;'>
+
+<li>Desarrollo de microservicios reactivos con Spring WebFlux.</li>
+
+<li>Implementación de autenticación JWT y seguridad con Spring Security.</li>
+
+<li>Integración con PostgreSQL utilizando JPA y R2DBC.</li>
+
+<li>Generación de reportes PDF, gráficos y exportaciones CSV.</li>
+
+<li>Contenerización y despliegue con Docker y Jib.</li>
+
+<li>Desarrollo de APIs REST y programación reactiva.</li>
+
+<li>Monitoreo de métricas con Prometheus y Micrometer.</li>
+
+<li>Control de versiones con Git y GitHub.</li>
+
+</ul>
+`,
+
+'Spring Boot, Spring WebFlux, Spring Security, PostgreSQL, JPA, R2DBC, APIs REST, JWT Authentication, Docker, Gradle, GitHub, Prometheus, Micrometer',
+
+'assets/logos/subnacionales.png'
+
+)">
+
+    <img src="assets/logos/subnacionales.png" alt="">
+    
+    <span>Elecciones Subnacionales</span>
+
+</div>
 
                             <!-- Subnacionales Segunda -->
                             <div class="logo-card" onclick="openModal(
@@ -699,6 +732,17 @@ window.onclick = function(event){
 
                     </div>
                 </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="assets/logos/gamea.png" alt="GAMEA"
+                            style="width:70px;margin-bottom:15px;filter:drop-shadow(0 0 10px #00ffff);">
+                        <h3>Alcaldía de El Alto</h3>
+                        <p>Jefe de Unidad de Soluciones Tecnológicas y Director
+                            de Tecnologías.</p>
+                    </div>
+                </div>
+
 
                 <div class="timeline-item">
                     <div class="timeline-content">
@@ -790,30 +834,30 @@ window.onclick = function(event){
             <a href="#">LinkedIn</a>
         </section>
 
-        <section id="empresas">\n <h2 class="section-title">EMPRESAS E
-                INSTITUCIONES</h2>\n\n <div class="projects-grid">\n\n <div
-                    class="card" style="text-align:center;">\n <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_OEP_Bolivia.svg/512px-Logo_OEP_Bolivia.svg.png"
-                        style="width:90px;margin-bottom:20px;">\n <h3>Tribunal
-                        Supremo Electoral</h3>\n <p>Desarrollo y mantenimiento
-                        de sistemas biométricos e interoperabilidad.</p>\n
-                </div>\n\n <div class="card" style="text-align:center;">\n <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/El_Alto_Bolivia.svg/512px-El_Alto_Bolivia.svg.png"
-                        style="width:90px;margin-bottom:20px;">\n <h3>Gobierno
-                        Autónomo Municipal de El Alto</h3>\n <p>Desarrollo de
+        <section id="empresas"> <h2 class="section-title">EMPRESAS E
+                INSTITUCIONES</h2> <div class="projects-grid"> <div
+                    class="card" style="text-align:center;"> <img
+                        src="assets/logos/oep.png"
+                        style="width:90px;margin-bottom:20px;"> <h3>Tribunal
+                        Supremo Electoral</h3> <p>Desarrollo y mantenimiento
+                        de sistemas biométricos e interoperabilidad.</p>
+                </div>\n\n <div class="card" style="text-align:center;"> <img
+                        src="assets/logos/gamea.png"
+                        style="width:90px;margin-bottom:20px;"> <h3>Gobierno
+                        Autónomo Municipal de El Alto</h3> <p>Desarrollo de
                         sistemas tecnológicos y soluciones de seguridad
-                        ciudadana.</p>\n </div>\n\n <div class="card"
-                    style="text-align:center;">\n <img
-                        src="https://www.lafar.com.bo/wp-content/uploads/2022/03/logo-lafar.png"
-                        style="width:120px;background:white;padding:10px;border-radius:10px;margin-bottom:20px;">\n
-                    <h3>LAFAR</h3>\n <p>Desarrollo de sistemas empresariales y
-                        administración de datos.</p>\n </div>\n\n <div
-                    class="card" style="text-align:center;">\n <img
-                        src="https://cdn-icons-png.flaticon.com/512/2721/2721297.png"
-                        style="width:90px;margin-bottom:20px;filter:drop-shadow(0 0 10px #00ffff);">\n
-                    <h3>Binaria Consultores</h3>\n <p>Desarrollo y mantenimiento
-                        de soluciones tecnológicas.</p>\n </div>\n\n
-            </div>\n</section>\n\n<footer>
+                        ciudadana.</p> </div> <div class="card"
+                    style="text-align:center;"> <img
+                        src="assets/logos/lafar.png"
+                        style="width:120px;background:white;padding:10px;border-radius:10px;margin-bottom:20px;">
+                    <h3>LAFAR</h3> <p>Desarrollo de sistemas empresariales y
+                        administración de datos.</p> </div> <div
+                    class="card" style="text-align:center;"> <img
+                        src="assets/logos/generales.png"
+                        style="width:90px;margin-bottom:20px;filter:drop-shadow(0 0 10px #00ffff);">
+                    <h3>Binaria Consultores</h3> <p>Desarrollo y mantenimiento
+                        de soluciones tecnológicas.</p> </div>
+            </div></section><footer>
             © 2026 Juan Carlos Salamanca - juancarlosdev.netlify.app
         </footer>
         <style>
